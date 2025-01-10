@@ -1,0 +1,102 @@
+.kensaku-wrapper {
+  margin-bottom: 3rem;
+}
+
+.kensaku-bar {
+  display: flex;
+  align-items: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--glass-border);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.kensaku-bar input {
+  flex: 1;
+  background: transparent;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.kensaku-bar input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.kensaku-engine-select select {
+  background: #000000;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: 1px solid var(--glass-border);
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-height: 200px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.kensaku-engine-select select:hover {
+  background: #1a1a1a;
+}
+
+.kensaku-engine-select select option {
+  background: #000000;
+  color: var(--text-color);
+  padding: 8px;
+}
+
+.kensaku-engine-select select optgroup {
+  background: #000000;
+  color: var(--accent-color);
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.kensaku-engine-select select optgroup option {
+  color: var(--text-color);
+  font-weight: normal;
+  padding-left: 16px;
+}
+
+#kensaku-button {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#kensaku-button:hover {
+  transform: scale(1.1);
+}
+
+/* セレクトボックスのドロップダウンメニューのスタイル */
+.kensaku-engine-select {
+  position: relative;
+  display: inline-block;
+}
+
+/* セレクトボックスのドロップダウンが表示される領域を制限 */
+.kensaku-engine-select select {
+  max-height: 200px; /* 表示される最大の高さ */
+  overflow-y: auto; /* スクロール可能にする */
+}
+
+@media (max-width: 768px) {
+  .kensaku-engine-select select {
+    max-width: 100%;
+  }
+  
+  .kensaku-bar {
+    margin-top: 0.5rem;
+  }
+}

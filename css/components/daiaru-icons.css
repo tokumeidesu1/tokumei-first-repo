@@ -1,0 +1,16 @@
+.daiaru-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+}
+
+.fa-brands.fa-twitter.daiaru-icon {
+  font-size: 2rem;
+  color: white;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

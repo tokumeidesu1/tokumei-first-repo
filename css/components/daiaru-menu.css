@@ -1,0 +1,61 @@
+.daiaru-menu-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.daiaru-item:hover .daiaru-menu-button {
+  opacity: 1;
+}
+
+.daiaru-menu {
+  position: absolute;
+  top: 0.5rem;
+  right: 2.5rem;
+  background: var(--background-color);
+  border: 1px solid var(--glass-border);
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: none;
+  z-index: 100;
+  box-shadow: var(--neon-shadow);
+  min-width: 120px;
+}
+
+.daiaru-menu.show {
+  display: block;
+}
+
+.daiaru-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.daiaru-edit {
+  color: var(--text-color);
+}
+
+.daiaru-delete {
+  color: #ff4444;
+}
+
+.daiaru-menu-item:hover {
+  background: var(--glass-bg);
+}

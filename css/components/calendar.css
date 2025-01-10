@@ -1,0 +1,112 @@
+.calendar-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+}
+
+.calendar-modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-content {
+  background: var(--background-color);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-title {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.calendar-close {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-nav-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.current-month {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.calendar-grid {
+  width: 100%;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.calendar-date {
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 5px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.calendar-date:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+.calendar-date.today {
+  background: var(--accent-color);
+  color: white;
+}
+
+.calendar-date.prev-month,
+.calendar-date.next-month {
+  opacity: 0.5;
+}

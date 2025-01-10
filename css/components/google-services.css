@@ -1,0 +1,135 @@
+.google-services-toggle {
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.services-toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services-toggle-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent-color);
+  box-shadow: var(--neon-shadow);
+}
+
+.services-toggle-button i {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+.services-grid {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  z-index: 1000;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-height: calc(3 * (48px + 1rem) + 3rem);
+  overflow-y: auto;
+}
+
+.services-grid.active {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.service-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.service-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.service-item span {
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.services-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.page-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--glass-border);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  border: none;
+}
+
+.page-dot.active {
+  background: var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-color);
+  transform: scale(1.2);
+}
+
+.page-dot:hover {
+  background: var(--accent-color);
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    max-width: 100%;
+  }
+  
+  .services-grid.active {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
