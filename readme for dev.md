@@ -98,3 +98,4 @@ doctypeとはDocument typeの略で、このコードはどのような言語で
 </head>
 ```
 というふうにやることがおおい。
+中のmetaはタグを持たないメタデータの設定に用い、linkはサイトのアイコンやCSS、scriptはJavaScriptの読み込みにそれぞれ使うことが多い。titleはその名の通りサイト名である
