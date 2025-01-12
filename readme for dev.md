@@ -72,10 +72,29 @@ doctypeとはDocument typeの略で、このコードはどのような言語で
 ```html
  <html>
       <head>
-      </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Document title</title>
+    </head>
+      <body>
+      </body>
 ~~~~~~~~~~~~~~~~~~
     </html>
 ```
-疲れたので今日はやめます。2025/01/12
-追記：やる気が出たので再開します　22時36分
-随時更新予定。
+囲まないと認識されないので、後述のheadなどと合わせて必ずhtmlにつける必要がある。
+#### head
+<head>
+これは人間の目に見えるタグではない。要するに、ブラウザのページに表示されない内部データを格納するタグ。
+たとえばタイトル。
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Grandma's Heavy Metal Festival Journal</title>
+  <link rel="icon" href="favicon.ico" />
+  <link href="main.css" rel="stylesheet" />
+  <script src="javascript.js"></script>
+</head>
+```
+というふうにやることがおおい。
