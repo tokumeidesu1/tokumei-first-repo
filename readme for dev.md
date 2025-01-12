@@ -108,6 +108,6 @@ doctypeとはDocument typeの略で、このコードはどのような言語で
 これが
 <iframe width="1866" height="916" src="https://www.youtube.com/embed/PEbRlW4TX0Y" title="【ゆっくり解説】「哲学的剃刀」を集めて十徳ナイフを作ろう！！！！！！！！！！！" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 こうなる。
-
+実は誰でも簡単に出せる
 
 ###### githubでこれが見えてるといいけど
