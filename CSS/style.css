@@ -1,0 +1,12 @@
+.zigazisan {
+    font-size: 5em;
+    font-weight: bold;
+    color: black;
+    margin-top: 0.5em;
+}
+
+.self-criticism {
+    font-size: 1em; /* 小さい文字サイズに設定 */
+    color: rgb(0, 0, 0); /* 控えめな色を指定 */
+    margin-top: 0.2em; /* 上との間隔を少し空ける */
+}
